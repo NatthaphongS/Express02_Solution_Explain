@@ -1,0 +1,22 @@
+[
+  {
+    "id": 3,
+    "title": "Electronic Cotton Cheese",
+    "price": 692,
+    "description": "Ergonomic executive chair upholstered in bonded black leather and PVC padded seat and back for all-day comfort and support",
+    "images": [
+      "https://picsum.photos/640/640?r=2771",
+      "https://picsum.photos/640/640?r=5047",
+      "https://picsum.photos/640/640?r=3556"
+    ],
+    "creationAt": "2023-05-03T00:09:03.000Z",
+    "updatedAt": "2023-05-03T00:09:03.000Z",
+    "category": {
+      "id": 1,
+      "name": "Clothes",
+      "image": "https://picsum.photos/640ฆ/640?r=1983",
+      "creationAt": "2023-05-03T00:09:03.000Z",
+      "updatedAt": "2023-05-03T00:09:03.000Z"
+    }
+  }
+]
