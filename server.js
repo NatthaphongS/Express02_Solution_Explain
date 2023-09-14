@@ -78,9 +78,11 @@ app.delete("/product/:id", (req, res) => {
   });
 });
 
-// ป้องกันการ มั่ว url
-app.use((req, res) => {
+// ป้องกันการ มั่ว url ต้องเป็น middleware สุดท้ายเสมอ เพราะ use หมายถึงทุกๆ method
+// แต่หากจำเป็นต้องไปทำ middleware ตัวถัดไปด้วย จะต้องใช้ next
+app.use((req, res, next) => {
   res.status(404).json({ msg: "Path not found" });
+  next();
 });
 
 let port = process.env.PORT || 8000;
