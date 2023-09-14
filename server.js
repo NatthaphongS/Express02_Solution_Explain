@@ -78,5 +78,10 @@ app.delete("/product/:id", (req, res) => {
   });
 });
 
+// ป้องกันการ มั่ว url
+app.use((req, res) => {
+  res.status(404).json({ msg: "Path not found" });
+});
+
 let port = process.env.PORT || 8000;
 app.listen(port, () => console.log(`Server is running on port ${port}`));
